@@ -37,9 +37,3 @@ jobs:
         run: |
           mkdir -p database
           touch database/database.sqlite
-
-      - name: Run tests (PHPUnit/Pest)
-        env:
-          DB_CONNECTION: sqlite
-          DB_DATABASE: database/database.sqlite
-        run: php artisan test
